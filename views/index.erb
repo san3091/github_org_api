@@ -10,7 +10,7 @@
   <div class="text-center">
     <h1><%= @organization.login %></h1>
     <h3><%= @organization.description %></h3>
-    <h3><%= @organization.pull_requests ? "#{@organization.pull_requests} Pull Requests Open" : "No Pull Requests" %></h3>
+    <h3><%= @organization.pull_requests ? "#{@organization.pull_requests.length} Pull Requests Open" : "No Pull Requests" %></h3>
     <a class="btn btn-default" role="button" href="<%= @organization.html_url %>"><%= @organization.login %> on Github</a>
   </div>
 </body>

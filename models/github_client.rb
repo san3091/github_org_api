@@ -7,16 +7,16 @@ class GithubClient
   end
 
   def call(opt={})
-    
+
     case opt[:method].downcase
     when 'get'
       @client[opt[:path]].get
     when 'put'
-      @client[opt[:path]].put
+      # implement @client[opt[:path]].put
     when 'post'
-      @client[opt[:path]].post
+      # implement @client[opt[:path]].post
     when 'delete'
-      @client[opt[:path]].delete
+      # implement @client[opt[:path]].delete
     end
   end
 
